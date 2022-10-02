@@ -1,0 +1,201 @@
+:root {
+  --primary-text-color: #757575;
+  --H-and-header: #212121;
+  --logo-and-hover: #2196f3;
+  --button-no-active: #f5f4fa;
+  --background-color: #fff;
+  --background-color-secondary: #2f303a;
+}
+/*головне*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+/*загальні класи*/
+.list {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--H-and-header);
+}
+.button {
+  color: var(--background-color);
+  background-color: var(--logo-and-hover);
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.no-italic {
+  font-style: normal;
+}
+/*головний банер*/
+.hero {
+  background: var(--background-color-secondary);
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+/*логотип сайта*/
+.logo {
+  color: var(--H-and-header);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.web-color {
+  color: var(--logo-and-hover);
+}
+
+/*навігація по сайту*/
+.site-nav .link {
+  color: var(--H-and-header);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--logo-and-hover);
+}
+.site-nav .link.current {
+  color: var(--logo-and-hover);
+}
+.contact-nav .link-contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.contact-nav .link-contact:hover,
+.contact-nav .link-contact:focus {
+  color: var(--logo-and-hover);
+}
+/*Наші переваги*/
+.title-features {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--H-and-header);
+}
+.p-features {
+  line-height: 1.71;
+}
+/*наша команда*/
+.section-team {
+  background-color: var(--button-no-active);
+}
+.team-card {
+  background-color: var(--background-color);
+}
+.team-header {
+  color: var(--H-and-header);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*сторінка портфоліо*/
+.portfolio-list .list {
+  color: var(--H-and-header);
+}
+.button-portfolio {
+  background-color: var(--button-no-active);
+  color: var(--H-and-header);
+  cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--background-color);
+  background-color: var(--logo-and-hover);
+}
+.portfolio-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--H-and-header);
+}
+.content-portfolio {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*footer*/
+/*контакти*/
+.pidval {
+  background-color: var(--background-color-secondary);
+}
+.logo-footer {
+  color: var(--background-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.footer-nav {
+  list-style: none;
+}
+.google-adress {
+  line-height: 1.71;
+  color: var(--background-color);
+  text-decoration: none;
+}
+.footer-contact {
+  text-decoration: none;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.google-adress:hover,
+.google-adress:focus {
+  color: var(--logo-and-hover);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--logo-and-hover);
+}
+/* header text color #212121 */
+/* main text color #757575 */
+/* text on banner and button color background: #FFFFFF; */
+/* text on banner and button blue: #2196F3 ; */
+/* text black: #000000; */
+/* big banner: #2F303A; */
+/* our team background and buttons filter: #F5F4FA; */
