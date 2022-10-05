@@ -31,7 +31,6 @@ body {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
-  outline: 2px solid salmon;
 }
 .section-title {
   margin-top: 0;
@@ -40,9 +39,14 @@ body {
   font-size: 36px;
   line-height: 1.16;
   color: var(--H-and-header);
+  text-align: center;
 }
-.wedo-images {
-  background-color: tomato;
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 .button {
   display: inline-block;
@@ -105,6 +109,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .web-color {
   color: var(--logo-and-hover);
@@ -117,6 +125,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -128,10 +139,20 @@ body {
 .site-nav {
   display: flex;
 }
-.site-nav .li-item {
-  margin-right: 50px;
+.site-nav .li-item + .li-item {
+  margin-left: 50px;
+}
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+.contact-nav .item-contact + .item-contact {
+  margin-left: 50px;
 }
 .contact-nav .link-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -143,6 +164,12 @@ body {
   color: var(--logo-and-hover);
 }
 /*Наші переваги*/
+.feature-list {
+  display: flex;
+}
+.feature-list .feature-item + .feature-item {
+  margin-left: 30px;
+}
 .title-features {
   margin-bottom: 10px;
   font-weight: 700;
@@ -154,7 +181,20 @@ body {
   margin-top: 0;
   line-height: 1.71;
 }
+/* що ми робимо */
+.wedo-images {
+  display: flex;
+}
+.wedo-images .wedo-items + .wedo-items {
+  margin-left: 30px;
+}
 /*наша команда*/
+.team-list {
+  display: flex;
+}
+.team-list .team-card + .team-card {
+  margin-left: 30px;
+}
 .section-team {
   background-color: var(--button-no-active);
 }
@@ -170,12 +210,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .team-text {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .team-image {
   margin-bottom: 30px;
