@@ -17,15 +17,20 @@ body {
   letter-spacing: 0.03em;
 }
 /*загальні класи*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .container {
+  width: 100%;
+  margin: 0 auto;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
   outline: 2px solid salmon;
 }
 .section-title {
@@ -37,7 +42,6 @@ body {
   color: var(--H-and-header);
 }
 .wedo-images {
-  margin-bottom: 94px;
   background-color: tomato;
 }
 .button {
@@ -121,6 +125,12 @@ body {
 .site-nav .link.current {
   color: var(--logo-and-hover);
 }
+.site-nav {
+  display: flex;
+}
+.site-nav .li-item {
+  margin-right: 50px;
+}
 .contact-nav .link-contact {
   font-weight: 500;
   line-height: 1.14;
@@ -134,7 +144,6 @@ body {
 }
 /*Наші переваги*/
 .title-features {
-  margin-top: 94px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -143,7 +152,6 @@ body {
 }
 .p-features {
   margin-top: 0;
-  margin-bottom: 94px;
   line-height: 1.71;
 }
 /*наша команда*/
@@ -154,7 +162,6 @@ body {
   background-color: var(--background-color);
   width: 270px;
   height: 368px;
-  margin-bottom: 94px;
 }
 .team-header {
   margin-top: 0;
@@ -172,8 +179,13 @@ body {
 }
 .team-image {
   margin-bottom: 30px;
+  display: block;
 }
 /*сторінка портфоліо*/
+.portfolio-image {
+  margin-bottom: 20px;
+  display: block;
+}
 .portfolio-list .list {
   color: var(--H-and-header);
 }
@@ -206,17 +218,28 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--H-and-header);
+  margin-top: 0;
+  margin-bottom: 4px;
+  background-color: tomato;
 }
 .content-portfolio {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.list-filters {
+  margin-bottom: 34px;
 }
 /*footer*/
 /*контакти*/
 .pidval {
   background-color: var(--background-color-secondary);
+  /* padding: 60px 0; */
 }
 .logo-footer {
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: var(--background-color);
   font-family: 'Raleway';
   font-weight: 700;
@@ -230,11 +253,15 @@ body {
   margin: 0;
 }
 .google-adress {
+  padding-top: 0;
+  padding-bottom: 9px;
   line-height: 1.71;
   color: var(--background-color);
   text-decoration: none;
 }
 .footer-contact {
+  padding-top: 0;
+  padding-bottom: 9px;
   text-decoration: none;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
