@@ -204,6 +204,8 @@ body {
   background-color: var(--background-color);
   width: 270px;
   height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-header {
   margin-top: 0;
@@ -221,6 +223,11 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .team-image {
   margin-bottom: 30px;
   display: block;
@@ -236,9 +243,14 @@ body {
 .portfolio-element {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
+}
+.portfolio-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .button-portfolio {
   padding: 6px 25px;
@@ -269,6 +281,18 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--H-and-header);
+}
+.portfolio-header {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+.content-portfolio {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .content-portfolio {
   font-size: 16px;
