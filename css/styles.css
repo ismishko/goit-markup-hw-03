@@ -28,9 +28,11 @@ body {
 }
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section-title {
   margin-top: 0;
@@ -224,12 +226,19 @@ body {
   display: block;
 }
 /*сторінка портфоліо*/
-.portfolio-image {
-  margin-bottom: 20px;
-  display: block;
-}
 .portfolio-list .list {
   color: var(--H-and-header);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-element {
+  width: 370px;
+  margin-right: 30px;
+}
+.portfolio-element:nth-child(3n) {
+  margin-right: 0;
 }
 .button-portfolio {
   padding: 6px 25px;
@@ -260,18 +269,18 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--H-and-header);
-  margin-top: 0;
-  margin-bottom: 4px;
-  background-color: tomato;
 }
 .content-portfolio {
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 .list-filters {
-  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.list-filters .filters-item + .filters-item {
+  margin-left: 8px;
 }
 /*footer*/
 /*контакти*/
