@@ -16,10 +16,24 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 /*загальні класи*/
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.our-features {
+  padding-bottom: 0px;
 }
 .list {
   list-style: none;
@@ -27,7 +41,6 @@ body {
   margin: 0;
 }
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -60,7 +73,6 @@ body {
   color: var(--background-color);
   background-color: var(--logo-and-hover);
   cursor: pointer;
-  margin-bottom: 200px;
 }
 .button:hover,
 .button:focus {
@@ -92,9 +104,11 @@ body {
 .hero {
   background: var(--background-color-secondary);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
-  padding-top: 200px;
+  width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -103,6 +117,8 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
   display: block;
+    margin-right: auto;
+  margin-left: auto;
   /* background-color: tomato; */
 }
 /*логотип сайта*/
@@ -211,7 +227,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-header {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--H-and-header);
   font-weight: 500;
@@ -221,7 +237,7 @@ body {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -232,10 +248,18 @@ img {
   height: auto;
 }
 .team-image {
-  margin-bottom: 30px;
   display: block;
 }
 /*сторінка портфоліо*/
+.content-card {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
 .portfolio-list .list {
   color: var(--H-and-header);
 }
@@ -249,7 +273,7 @@ img {
   margin-bottom: 30px;
   /* width: 370px;
    */
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 .portfolio-element:nth-child(3n) {
   margin-right: 0;
@@ -260,12 +284,11 @@ img {
 .button-portfolio {
   padding: 6px 25px;
   border-radius: 4px;
-  min-width: 73px;
-  min-height: 38px;
   background-color: var(--button-no-active);
   color: var(--H-and-header);
   cursor: pointer;
   text-align: center;
+  border-color: transparent;
 }
 .btn-text-portfolio {
   font-weight: 500;
@@ -288,16 +311,7 @@ img {
   color: var(--H-and-header);
 }
 .portfolio-header {
-  margin-top: 20px;
-  margin-right: 24px;
   margin-bottom: 20px;
-  margin-left: 24px;
-}
-.content-portfolio {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 .content-portfolio {
   font-size: 16px;
@@ -316,9 +330,10 @@ img {
 .pidval {
   background-color: var(--background-color-secondary);
   /* padding: 60px 0; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
-  padding-top: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
   color: var(--background-color);
@@ -339,7 +354,6 @@ img {
   margin-bottom: 9px;
 }
 .footer-item:last-child {
-  padding-bottom: 60px;
   margin-bottom: 0px;
 }
 .google-adress {
