@@ -309,9 +309,6 @@ img {
   color: var(--H-and-header);
   margin-bottom: 4px;
 }
-.portfolio-header {
-  margin-bottom: 20px;
-}
 .content-portfolio {
   font-size: 16px;
   line-height: 1.19;
